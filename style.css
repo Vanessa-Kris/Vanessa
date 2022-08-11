@@ -19,3 +19,18 @@ body {
   .navbar .nav-link {
     color: #fff !important;
   }
+
+  /* Text */
+  .mine {
+    font-size: 45px;
+  }
+
+  h4 {
+    color: rgb(247, 211, 211);
+  }
+
+  .text {
+    color: rgb(247, 211, 211);
+  }
+
+  
