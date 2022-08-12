@@ -59,3 +59,9 @@ body {
     text-decoration: none;
     
  }
+
+ .nav a {
+    color: rgb(250, 242, 242);
+    position: relative;
+    font-weight: 400;
+ }
