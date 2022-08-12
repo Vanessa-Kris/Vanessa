@@ -25,7 +25,7 @@ body {
     font-size: 45px;
   }
 
-  h2 {
+  h2,h4 {
     color: rgb(247, 211, 211);
   }
 
@@ -49,4 +49,13 @@ body {
       filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   }
 
- 
+ .car {
+    width: 300px;
+    border: #fff;
+    
+ }
+
+ .car a {
+    text-decoration: none;
+    
+ }
