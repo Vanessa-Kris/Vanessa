@@ -26,11 +26,11 @@ body {
   }
 
   h2,h4 {
-    color: rgb(247, 211, 211);
+    color: rgb(255, 255, 255);
   }
 
   .text {
-    color: rgb(247, 211, 211);
+    color: rgb(255, 255, 255);
   }
 
   .red {
@@ -42,7 +42,19 @@ body {
     color: rgb(255, 90, 90);
   }
 
+  .project-text{
+    color: rgb(255, 90, 90);
+  }
+
+ .afkanerd-text a{
+    text-decoration: none;
+    color: #fff;
+  }
   
+  p {
+    color: rgb(245, 220, 220);
+
+  }
 
   .card:hover {
     -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
