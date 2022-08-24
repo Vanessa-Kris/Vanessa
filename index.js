@@ -1,35 +1,49 @@
-var contentWayPoint = function() {
-    var i = 0;
-    $('.animate-box').waypoint( function( direction ) {
+function food() {
+    alert("So you also like food 😂😂😂");
+}
 
-        if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-            
-            i++;
+function photos() {
+    alert("Wanna see my photos? Follow me on Instagram!");
+}
 
-            $(this.element).addClass('item-animate');
-            setTimeout(function(){
 
-                $('body .animate-box.item-animate').each(function(k){
-                    var el = $(this);
-                    setTimeout( function () {
-                        var effect = el.data('animate-effect');
-                        if ( effect === 'fadeIn') {
-                            el.addClass('fadeIn animated-fast');
-                        } else if ( effect === 'fadeInLeft') {
-                            el.addClass('fadeInLeft animated-fast');
-                        } else if ( effect === 'fadeInRight') {
-                            el.addClass('fadeInRight animated-fast');
-                        } else {
-                            el.addClass('fadeInUp animated-fast');
-                        }
+const scrollElements = document.querySelectorAll(".js-scroll");
 
-                        el.removeClass('item-animate');
-                    },  k * 100, 'easeInOutExpo' );
-                });
-                
-            }, 50);
-            
-        }
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
 
-    } , { offset: '85%' } );
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
 };
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
