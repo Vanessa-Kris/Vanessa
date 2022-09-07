@@ -119,6 +119,16 @@ p {
   opacity: 90%;
 } */
 
+.bgl {
+  background-color: linear-gradient(to right, rgba(242, 99, 99, 0.504),rgba(188, 68, 68, 0.488),rgba(243, 244, 245, 0.532));
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 500px;
+  height: 420px;
+}
 
 .icons {
   font-size: 50px;
