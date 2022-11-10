@@ -271,3 +271,28 @@ p {
     opacity: 1;
   }
 }
+
+/* Back to Top */
+#myb {
+	display: none;
+	 background-image: url(assets/chevron-up-solid.svg);
+	background-size: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #f382c7;
+	color: white;
+	cursor: pointer;
+	padding: 25px;
+	border-radius: 50px;
+
+}
+
+#myb:hover {
+	background-color: #f382c84a;
+}

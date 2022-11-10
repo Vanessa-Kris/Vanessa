@@ -31,7 +31,7 @@
 
 
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 1;">
+            <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block fixed-top" style="z-index: 1;">
                 <div class="container-fluid ">
                     <!-- Navbar brand -->
 
@@ -48,10 +48,10 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                                <a class="nav-link active" aria-current="page" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Blog</a>
@@ -60,7 +60,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">More</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item me-3 me-lg-0">
                                 <a class="nav-link" href="#">
@@ -101,9 +101,9 @@
 
         <!--Main layout-->
         <div class="conatiner-fluid mt-5">
-            <div class="container m-5">
 
-                <div class="row m-5">
+            <div class="container " id="about">
+                <div class="row ">
                     <div class="col-md-6 mb-4">
                         <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
                             data-mdb-ripple-color="light">
@@ -149,7 +149,7 @@
 
             <!--Section: Content-->
 
-            <div class="container text-center m-5">
+            <div class="container text-center m-5" id="experience">
 
                 <h2 class="mb-5"><strong>Experience</strong></h2>
                 <div class="row m-5">
@@ -187,7 +187,7 @@
             <!--Section: Content-->
 
             <!--  -->
-            <div class="container text-center m-5">
+            <div class="container text-center m-5" id="projects">
                     <h2 class="mb-5"><strong>My Projects?</strong></h2>
 
                     <div class="row row-cols-1 mt-5 mb-5 row-cols-md-3 g-4">
@@ -310,8 +310,8 @@
             <br />
 
 
-            <section id="contact mt-5">
-                <div class="container mt-5 contactContent justify-content-center ">
+            
+                <div class="container m-5 contactContent justify-content-center" id="contact">
                     <h2 class="text-center"><strong>Contact Me</strong></h2>
 
                     <div class="row mt-4 justify-content-center for">
@@ -340,7 +340,7 @@
 
                     </div>
                 </div>
-            </section>
+           
 
             <!--Section: Content-->
 
@@ -399,6 +399,8 @@
         </footer>
         <!--Footer-->
     </div>
+
+    <button onclick="topFunction()" id="myb" title="Go to top"></button>
 
     <!-- Bootstrap JS -->
     <script src="index.js"></script>
