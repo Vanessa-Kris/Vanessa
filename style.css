@@ -9,7 +9,7 @@ body {
 
 #intro {
   background-color: #fff;
-  background-image: url(assets/introshort\ \(copy\).jpg);
+  background-image: url(assets/introshort.jpg);
   height: 100vh;
 }
 
@@ -119,22 +119,6 @@ p {
   color: rgb(245, 220, 220);
 
 }
-
-/* .car:hover {
-    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
-      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  } */
-
-/* .car {
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    border: #fff;
-    
- } */
- .card1 {
-  padding-top: 30px;
- }
 
  .bg-image {
   box-shadow: 0 8px 32px 0 rgba(59, 50, 50, 0.533)!important;
