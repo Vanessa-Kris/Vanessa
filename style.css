@@ -4,6 +4,7 @@ body {
   background-image: url(assets/circle-scatter-haikei\(2\).svg);
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center !important;
 
 }
 
@@ -79,6 +80,9 @@ body {
 	transition: .3s;
 	bottom: 0;
 }
+
+.nav-colored { background-color:#ffffff; };
+.nav-transparent { background-color:#ffffff00;};
 /*****end of navbar******/
 
 /* Text */
@@ -280,3 +284,4 @@ p {
 #myb:hover {
 	background-color: #f382c84a;
 }
+ 

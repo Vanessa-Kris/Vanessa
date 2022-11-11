@@ -72,17 +72,15 @@ function topFunction() {
 
 // Navbar 
 
-nav = document.getElementById("navbarscroll");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction()
+const myNav = document.getElementById('navbarscroll');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
 };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    nav.style.display = "block";
-  } else {
-    nav.style.display = "none";
-  }
-}
