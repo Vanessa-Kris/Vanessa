@@ -121,10 +121,13 @@ p {
 
 }
 
- .bg-image {
+ /* .bg-image {
   box-shadow: 0 8px 32px 0 rgba(59, 50, 50, 0.533)!important;
- }
-
+ } */
+/* .bg-image img {
+  height: 500px;
+  width: 400px;
+} */
 
 .car {
   height: 300px;
