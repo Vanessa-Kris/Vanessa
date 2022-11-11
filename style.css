@@ -51,10 +51,10 @@ body {
 
 .nav-item,
 .nav-item a{
-	color: #e5e3e3 !important;
+	color: #d9d7d7 !important;
 	font-weight: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	/* position: relative; */
+	position: relative;
 	padding: 5px 0;
 	text-decoration: none;
 	list-style: none;
