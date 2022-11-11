@@ -1,6 +1,4 @@
 body {
-  /* background-color: black !important; */
-  /* background-image: url(assets/circle-scatter-haikei\(1\).svg); */
   background-image: url(assets/circle-scatter-haikei\(2\).svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,16 +51,15 @@ body {
 
 .nav-item,
 .nav-item a{
-	color: rgb(189, 189, 189) !important;
-	font-weight: 20px;
+	color: #e5e3e3 !important;
+	font-weight: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	position: relative;
+	/* position: relative; */
 	padding: 5px 0;
 	text-decoration: none;
 	list-style: none;
 	display: inline-block;
-	/* padding: 10px 20px; */
-	align-items: flex-end;
+	/* align-items: flex-end; */
 	padding-right: 20px;
 }
 
@@ -81,7 +78,7 @@ body {
 	bottom: 0;
 }
 
-.nav-colored { background-color:#ffffff; };
+.nav-colored { background-color:#252424;};
 .nav-transparent { background-color:#ffffff00;};
 /*****end of navbar******/
 
